@@ -20,6 +20,9 @@ void do_lab12()
     printf("[1] - Yes\n");
     printf("[2] - No\n");
     scanf("%d",&c);
+    //Uses simple data with numbers instead of names.
+    //First column is the initial order
+    //Second column is the reshaped order
     if (c==1) df=fopen("simple-data.csv","r");
     else df=fopen("struct-data.csv","r");
     //df=fopen("struct-data.csv","r");
@@ -52,8 +55,7 @@ void do_lab12()
         }
         if (fclose(df)==EOF) printf ("Error with closing file!");
 
-      //Printing menu, where all other
-      //main functions is being used
+      //Printing menu for 12th lab
         menu_for_12(head2, rehead);
 
       //Clearing memory
@@ -95,7 +97,7 @@ void menu_for_12(head *head2, head *rehead)
             printf("\n\nReshaped positions:\n");
             print_header();
             list_out(rehead);
-           // if((rehead->cnt) > 1) free_nodes_only(rehead);
+            free_nodes_only(rehead); //Clear to make program reusable
             break;
         case 2:
             system("cls");
@@ -125,34 +127,34 @@ void reshape_list(head *head2,head *rehead)
     int i, half;
 
     temp = head2->first;
-   // rehead = create_head();
+
     if(head2->cnt%2==0)
     {
-        half = head2->cnt/2;
-        for(i=0;i<half;i++) temp = temp->next;
-        create_node(temp->data,rehead);
-        for(i=1;i<head2->cnt;i++)
-        {
+        half = head2->cnt/2;                        //Example: (1,2,3,4,5,6)
+        for(i=0;i<half;i++) temp = temp->next;      //temp->data == 4
+        create_node(temp->data,rehead);             //First node == 4
+        for(i=1;i<head2->cnt;i++)                   //Makes list (4,5,6,1,2,3)
+        {                                           //So output is (3,2,1,6,5,4) - correct!
             temp = temp->next;
             add_signly(rehead,temp->data);
         }
     }
     else
     {
-        half = head2->cnt/2;
-        for(i=0;i<half;i++) temp = temp->next;
-        center = temp;
-        temp = temp->next;
-        create_node(temp->data,rehead);
-        for(i=1;i<half;i++)
-        {
+        half = head2->cnt/2;                        //Example: (1,2,3,4,5)
+        for(i=0;i<half;i++) temp = temp->next;      //temp->data == 3
+        center = temp;                              //Center saves (its 3)
+        temp = temp->next;                          //temp->data == 4
+        create_node(temp->data,rehead);             //First node == 4
+        for(i=1;i<half;i++)                         //Makes first half of the list:
+        {                                           //(4,5)
             temp = temp->next;
             add_signly(rehead,temp->data);
         }
-        add_signly(rehead,center->data);
-        for(i=0;i<half;i++)
-        {
-            temp = temp->next;
+        add_signly(rehead,center->data);            //Adds center (4,5,3)
+        for(i=0;i<half;i++)                         //Makes second half of the list:
+        {                                           //(4,5,3,1,2)
+            temp = temp->next;                      //So output is (2,1,3,5,4) - correct!
             add_signly(rehead,temp->data);
         }
     }

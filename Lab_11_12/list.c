@@ -38,7 +38,7 @@ void list_out(head *head)
       int i;
 
       p = head->first;
-      //while(p != NULL){
+      //while(p != NULL){  //Isn't used because of circular list
       for(i=0;i<head->cnt;i++){
             printf("|%30s |%10s |%5d |%16.2f |%6d |%5.1f |\n",
             p -> data -> name,

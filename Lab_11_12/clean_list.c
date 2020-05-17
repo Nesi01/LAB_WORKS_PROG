@@ -41,7 +41,7 @@ void free_list(head *q){
 }
 
 
-/*void free_nodes_only(head *q){
+void free_nodes_only(head *q){
 
     node *temp = NULL;
     node *p = NULL;
@@ -49,6 +49,7 @@ void free_list(head *q){
 
     temp = q->first->next;
     n = q->cnt;
+    q->cnt = 0;
 
 
     for(i=0;i<n;i++){
@@ -58,6 +59,6 @@ void free_list(head *q){
     }
 
     free_node(temp);
-    q->first=NULL;
-    q->last=NULL;
-}*/
+   // q->first=NULL;
+   // q->last=NULL;
+}

@@ -1,5 +1,6 @@
 #include "add_and_delete.h"
 
+//Used for SINGLY CURCULAR list
 void add_signly(head *head, comps *data)
 {
     node *temp;
@@ -12,6 +13,7 @@ void add_signly(head *head, comps *data)
     temp->data = data;
     head->last->next = temp; //Making circular list
 }
+
 
 void add_info(head *head)
 {
