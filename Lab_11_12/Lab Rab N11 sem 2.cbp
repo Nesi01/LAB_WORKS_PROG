@@ -35,6 +35,18 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="add_and_delete.h" />
+		<Unit filename="clean_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="clean_list.h" />
+		<Unit filename="lab11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lab11.h" />
+		<Unit filename="lab12.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lab12.h" />
 		<Unit filename="list.c">
 			<Option compilerVar="CC" />
 		</Unit>
