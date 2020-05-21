@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1589748023 source:d:\github\lab_works_prog\lab_11_12\add_and_delete.c
+	"add_and_delete.h"
+
+1589658925 d:\github\lab_works_prog\lab_11_12\add_and_delete.h
+	<stdio.h>
+	<stdlib.h>
+	"structs.h"
+	"struct_csv.h"
+
+1589322794 d:\github\lab_works_prog\lab_11_12\structs.h
+
+1589588166 d:\github\lab_works_prog\lab_11_12\struct_csv.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"structs.h"
+
+1589746461 source:d:\github\lab_works_prog\lab_11_12\clean_list.c
+	"clean_list.h"
+
+1589746218 d:\github\lab_works_prog\lab_11_12\clean_list.h
+	<stdlib.h>
+	"structs.h"
+
+1589589767 source:d:\github\lab_works_prog\lab_11_12\lab11.c
+	"lab11.h"
+
+1589589380 d:\github\lab_works_prog\lab_11_12\lab11.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"struct_csv.h"
+	"list.h"
+	"add_and_delete.h"
+	"clean_list.h"
+
+1589588166 d:\github\lab_works_prog\lab_11_12\list.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"structs.h"
+	"struct_csv.h"
+	"add_and_delete.h"
+
+1589748021 source:d:\github\lab_works_prog\lab_11_12\lab12.c
+	"lab12.h"
+
+1589666947 d:\github\lab_works_prog\lab_11_12\lab12.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"struct_csv.h"
+	"list.h"
+	"add_and_delete.h"
+	"clean_list.h"
+
+1589748023 source:d:\github\lab_works_prog\lab_11_12\list.c
+	"list.h"
+
+1589660021 source:d:\github\lab_works_prog\lab_11_12\main.c
+	"lab11.h"
+	"lab12.h"
+
+1589588166 source:d:\github\lab_works_prog\lab_11_12\struct_csv.c
+	"struct_csv.h"
+

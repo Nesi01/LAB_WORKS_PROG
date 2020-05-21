@@ -10,7 +10,7 @@ void free_head(head *q){
 
 
 void free_node(node *temp){
-    if((temp->next) != NULL) temp->next = NULL;
+    temp->next = NULL;
 
 
     free(temp->data->name);
