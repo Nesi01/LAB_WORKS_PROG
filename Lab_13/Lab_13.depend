@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1590142751 source:d:\proga\c\lab_13\clean_list.c
+	"clean_list.h"
+
+1589746218 d:\proga\c\lab_13\clean_list.h
+	<stdlib.h>
+	"structs.h"
+
+1590160605 d:\proga\c\lab_13\structs.h
+
+1590145299 source:d:\proga\c\lab_13\main.c
+	<stdio.h>
+	<stdlib.h>
+	"structs.h"
+	"read_from_file.h"
+	"adding.h"
+	"list.h"
+	"menu.h"
+	"clean_list.h"
+
+1590142719 d:\proga\c\lab_13\read_from_file.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"structs.h"
+	"adding.h"
+	"list.h"
+
+1590142733 d:\proga\c\lab_13\adding.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"structs.h"
+
+1590142738 d:\proga\c\lab_13\list.h
+	<stdio.h>
+	<stdlib.h>
+	"structs.h"
+
+1590142743 d:\proga\c\lab_13\menu.h
+	<stdio.h>
+	<stdlib.h>
+	"adding.h"
+	"list.h"
+
+1590142740 source:d:\proga\c\lab_13\menu.c
+	"menu.h"
+
+1590161300 source:d:\proga\c\lab_13\adding.c
+	"adding.h"
+
+1590161183 source:d:\proga\c\lab_13\list.c
+	"list.h"
+
+1590150043 source:d:\proga\c\lab_13\read_from_file.c
+	"read_from_file.h"
+
