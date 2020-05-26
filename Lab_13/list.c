@@ -54,7 +54,7 @@ void list_out(head *head, int ch)
             printf("|%30s |%7d |",
             p->data->name,
             p->data->group);
-            if (p->data->result.pass==15) printf ("%11s |\n","Passed");
+            if (is_pass(p)) printf ("%11s |\n","Passed");
             else printf ("%11s |\n","Not passed");
             p = p->next;
         }
@@ -62,7 +62,7 @@ void list_out(head *head, int ch)
     case 1:
         while(p != NULL)
         {
-            if (p->data->result.pass==15)
+            if (is_pass(p))
             {
                 printf("|%30s |%7d |%11s |\n",
                 p->data->name,
@@ -74,7 +74,7 @@ void list_out(head *head, int ch)
     case -1:
         while(p != NULL)
         {
-            if (p->data->result.pass!=15)
+            if (!is_pass(p))
             {
                 printf("|%30s |%7d |%11s |\n",
                 p->data->name,
@@ -88,5 +88,19 @@ void list_out(head *head, int ch)
         break;
     }
     printf("\n");
+}
+
+
+int is_pass(node *p)
+{
+    int chk;
+
+    if (p->data->result.marks.m1==1&&
+        p->data->result.marks.m2==1&&
+        p->data->result.marks.m3==1&&
+        p->data->result.marks.m4==1) chk = 1;
+    else chk = 0;
+
+    return chk;
 }
 

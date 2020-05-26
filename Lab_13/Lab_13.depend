@@ -6,7 +6,7 @@
 	<stdlib.h>
 	"structs.h"
 
-1590160605 d:\proga\c\lab_13\structs.h
+1590270401 d:\proga\c\lab_13\structs.h
 
 1590145299 source:d:\proga\c\lab_13\main.c
 	<stdio.h>
@@ -32,7 +32,7 @@
 	<string.h>
 	"structs.h"
 
-1590142738 d:\proga\c\lab_13\list.h
+1590503594 d:\proga\c\lab_13\list.h
 	<stdio.h>
 	<stdlib.h>
 	"structs.h"
@@ -49,9 +49,9 @@
 1590161300 source:d:\proga\c\lab_13\adding.c
 	"adding.h"
 
-1590161183 source:d:\proga\c\lab_13\list.c
+1590503601 source:d:\proga\c\lab_13\list.c
 	"list.h"
 
-1590150043 source:d:\proga\c\lab_13\read_from_file.c
+1590340613 source:d:\proga\c\lab_13\read_from_file.c
 	"read_from_file.h"
 
