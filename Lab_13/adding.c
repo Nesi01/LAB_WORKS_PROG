@@ -84,17 +84,33 @@ studs *new_struct()
         printf("Enter group: ");
         scanf("%d",&(*str0).group);
         printf("Enter marks\n[1] - Passed\n[0] - Not passed\n");
-        printf("Enter 1'st mark: ");
-        scanf("%d",&mark);
+        do
+        {
+            printf("Enter 1'st mark: ");
+            scanf("%d",&mark);
+            if(mark!=0&&mark!=1) printf("Incorrect input! Needs 0 or 1!\n");
+        }while (mark!=0&&mark!=1);
         str0->result.marks.m1 = mark;
-        printf("Enter 2'nd mark: ");
-        scanf("%d",&mark);
+        do
+        {
+            printf("Enter 2'nd mark: ");
+            scanf("%d",&mark);
+            if(mark!=0&&mark!=1) printf("Incorrect input! Needs 0 or 1!\n");
+        }while (mark!=0&&mark!=1);
         str0->result.marks.m2 = mark;
-        printf("Enter 3'rd mark: ");
-        scanf("%d",&mark);
+        do
+        {
+            printf("Enter 3'rd mark: ");
+            scanf("%d",&mark);
+            if(mark!=0&&mark!=1) printf("Incorrect input! Needs 0 or 1!\n");
+        }while (mark!=0&&mark!=1);
         str0->result.marks.m3 = mark;
-        printf("Enter 4'th mark: ");
-        scanf("%d",&mark);
+        do
+        {
+            printf("Enter 4'th mark: ");
+            scanf("%d",&mark);
+            if(mark!=0&&mark!=1) printf("Incorrect input! Needs 0 or 1!\n");
+        }while (mark!=0&&mark!=1);
         str0->result.marks.m4 = mark;
         str0->name[strlen(str0->name)-1]='\0';
     }
