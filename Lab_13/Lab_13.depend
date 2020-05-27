@@ -2,20 +2,19 @@
 1590142751 source:d:\proga\c\lab_13\clean_list.c
 	"clean_list.h"
 
-1589746218 d:\proga\c\lab_13\clean_list.h
+1590604680 d:\proga\c\lab_13\clean_list.h
 	<stdlib.h>
 	"structs.h"
 
 1590270401 d:\proga\c\lab_13\structs.h
 
-1590145299 source:d:\proga\c\lab_13\main.c
+1590601214 source:d:\proga\c\lab_13\main.c
 	<stdio.h>
 	<stdlib.h>
 	"structs.h"
 	"read_from_file.h"
 	"adding.h"
 	"list.h"
-	"menu.h"
 	"clean_list.h"
 
 1590142719 d:\proga\c\lab_13\read_from_file.h
@@ -46,7 +45,7 @@
 1590142740 source:d:\proga\c\lab_13\menu.c
 	"menu.h"
 
-1590161300 source:d:\proga\c\lab_13\adding.c
+1590600585 source:d:\proga\c\lab_13\adding.c
 	"adding.h"
 
 1590503601 source:d:\proga\c\lab_13\list.c
